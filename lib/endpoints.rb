@@ -11,4 +11,7 @@ namespace "/api/v1" do
     post "/tweets" do
         new_tweet = Tweet.new(JSON.parse(request.body.read)).save
     end
+    not_found do 
+         "Caminho não encontrado".to_json
+    end
 end
