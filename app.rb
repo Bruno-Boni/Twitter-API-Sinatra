@@ -22,5 +22,5 @@ get "/api/v1/tweets" do
  "Hello World"
 end
 post "/api/v1/tweets" do
-    "Testando"
+   puts "Testando #{request.body.read}"
 end
