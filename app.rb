@@ -15,8 +15,12 @@ class Tweet
     field :image, type: String
     field :tags, type: Array, default: []
     field :likes, type: Integer, default: 0
-    field :author, type: String
 end
 
 
-get ("/api/v1/tweets") { "Hello World"}
+get "/api/v1/tweets" do
+ "Hello World"
+end
+post "/api/v1/tweets" do
+    "Testando"
+end
