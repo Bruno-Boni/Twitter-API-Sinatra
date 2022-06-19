@@ -19,5 +19,4 @@ class Tweet
 end
 
 
-
 get ("/api/v1/tweets") { "Hello World"}
