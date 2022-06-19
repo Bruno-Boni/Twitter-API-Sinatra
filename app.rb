@@ -19,8 +19,8 @@ end
 
 
 get "/api/v1/tweets" do
- "Hello World"
+ Tweet.all.to_json
 end
 post "/api/v1/tweets" do
-   puts "Testando #{request.body.read}"
+   new_tweet = Tweet.new(JSON.parse(request.body.read)).save
 end
